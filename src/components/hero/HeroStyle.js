@@ -1,11 +1,8 @@
-import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
-import { devices } from './helpers/devices';
-import HeroSmallImg from './static/images/hero-image-small.jpg';
-import IMG_0649 from './static/images/IMG_0649_2.jpg';
+import { devices } from '../../helpers/devices';
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   position: relative;
   height: 100vh;
   display: flex;
@@ -18,7 +15,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const BgImg = styled.div`
+export const BgImg = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -32,13 +29,13 @@ const BgImg = styled.div`
   }
 `;
 
-const Image = styled.img`
+export const Image = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
 `;
 
-const Heading = styled.h1`
+export const Heading = styled.h1`
   font-size: 4rem;
   color: white;
   text-transform: uppercase;
@@ -55,7 +52,7 @@ const Heading = styled.h1`
   }
 `;
 
-const Button = styled(Link)`
+export const Button = styled(Link)`
   border: 2px solid #fff;
   border-radius: 4px;
   padding: 1rem;
@@ -70,32 +67,7 @@ const Button = styled(Link)`
   }
 `;
 
-const Brand = styled.div`
+export const Brand = styled.div`
   margin-top: 1rem;
   font-weight: 600;
 `;
-
-const Hero = () => {
-  return (
-    <Wrapper>
-      <Heading>
-        Välkommen till <Brand>Sternax Data AB</Brand>
-      </Heading>
-      <BgImg>
-        <picture>
-          <source srcSet={`${HeroSmallImg} 1x`} media='(max-width: 37.5em)' />
-          <Image
-            srcSet={`${HeroSmallImg} 1x, ${IMG_0649} 2x`}
-            alt='background'
-            src={IMG_0649}
-          />
-        </picture>
-      </BgImg>
-      <Button smooth to='#services'>
-        Läs mer
-      </Button>
-    </Wrapper>
-  );
-};
-
-export default Hero;

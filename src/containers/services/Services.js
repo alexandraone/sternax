@@ -5,39 +5,13 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import styled from 'styled-components';
-import { devices } from '../helpers/devices';
-import HrLine from '../ui/HrLine';
-
-const Wrapper = styled.div`
-  text-align: center;
-  padding: 6rem 0;
-`;
-
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  div {
-    margin: 1rem;
-    width: 20rem;
-
-    @media ${devices.laptop} {
-      width: 18rem;
-    }
-
-    @media ${devices.desktop} {
-      width: 30rem;
-    }
-  }
-`;
-
-const ServicesContainer = styled.div`
-  margin-bottom: 5rem;
-`;
-
-const Description = styled.p``;
+import HrLine from '../../ui/HrLine';
+import {
+  Container,
+  Description,
+  ServicesContainer,
+  Wrapper,
+} from './ServicesStyle';
 
 const Services = () => {
   return (

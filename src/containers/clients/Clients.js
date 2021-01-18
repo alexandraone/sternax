@@ -1,26 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import HrLine from '../ui/HrLine';
-
-const Wrapper = styled.div`
-  padding-bottom: 6rem;
-  text-align: center;
-`;
-
-const Heading = styled.h1`
-  text-align: center;
-  padding-top: 6rem;
-`;
-
-const Container = styled.div`
-  text-align: center;
-`;
-
-const UlList = styled.ul`
-  list-style: none;
-  padding: 0;
-  font-weight: 600;
-`;
+import HrLine from '../../ui/HrLine';
+import { Container, Heading, UlList, Wrapper } from './ClientsStyle';
 
 const Clients = () => {
   return (
