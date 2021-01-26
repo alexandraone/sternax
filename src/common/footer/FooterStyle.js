@@ -9,20 +9,19 @@ export const StyledFooter = styled.footer`
 export const FooterContent = styled.div`
   display: flex;
   padding: 1rem 2rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  color: #fff;
   @media ${devices.tablet} {
     padding: 2rem 0.5rem;
-  }
-
-  @media ${devices.mobileL} {
     flex-direction: column;
   }
 `;
 
-export const Text = styled.p`
-  color: #fff;
+export const Copyright = styled.p``;
+
+export const OrgNumber = styled.p`
   @media ${devices.mobileL} {
-    padding-bottom: 1rem;
+    padding-bottom: 0.25rem;
   }
 `;

@@ -12,11 +12,7 @@ const Hero = () => {
       <BgImg>
         <picture>
           <source srcSet={`${HeroSmallImg} 1x`} media='(max-width: 37.5em)' />
-          <Image
-            srcSet={`${HeroSmallImg} 1x, ${IMG_0649} 2x`}
-            alt='background'
-            src={IMG_0649}
-          />
+          <Image srcSet={`${IMG_0649} 2x`} alt='background' src={IMG_0649} />
         </picture>
       </BgImg>
       <Button smooth to='#services'>

@@ -1,11 +1,17 @@
 import React from 'react';
-import { FooterContent, StyledFooter, Text } from './FooterStyle';
+import {
+  Copyright,
+  FooterContent,
+  OrgNumber,
+  StyledFooter,
+} from './FooterStyle';
 
 const Footer = () => {
   return (
     <StyledFooter>
       <FooterContent>
-        <Text>Copyright &copy; Sternax Data AB 2021, Org.nr. 556920-0339</Text>
+        <Copyright>Copyright &copy; Sternax Data AB 2021</Copyright>
+        <OrgNumber>Org.nr. 556920-0339</OrgNumber>
       </FooterContent>
     </StyledFooter>
   );

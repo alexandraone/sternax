@@ -44,11 +44,11 @@ export const Heading = styled.h1`
   text-align: center;
 
   @media ${devices.mobileL} {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   @media ${devices.mobileS} {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 `;
 
@@ -62,7 +62,7 @@ export const Button = styled(Link)`
   @media ${devices.mobileM} {
     padding: 1rem 0;
     letter-spacing: 2.5px;
-    width: 100%;
+    width: 60%;
     text-align: center;
   }
 `;
